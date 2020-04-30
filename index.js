@@ -1,10 +1,18 @@
 var katzDeliLine = [];
-var counter
+var counter = 0;
 
-function takeANumber (katzDeliLine) {
-    katzDeliLine.push(name);
-    return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+function takeANumber (number) {
+  
+  // whenever new person walks in, increment by {number of people}
+  katzDeliLine.push(number);
+  counter ++;
+  return `Welcome! You are number ${number}!`;
 }
+
+// function takeANumber (katzDeliLine, name) {
+//     katzDeliLine.push(name);
+//     return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+// }
 
 function nowServing (katzDeliLine) {
   if (katzDeliLine.length === 0) {
